@@ -1,13 +1,112 @@
-@import 'config.css';
-@import 'color.css';
-@import 'grid.css';
+/* ============================
+   COLOR VARIABLES
+   ============================ */
+:root {
+  --bg-primary: #0a0e27;
+  --bg-secondary: #1a1f3a;
+  --text-primary: #ffffff;
+  --text-secondary: #ebeef2;
+  --accent-blue: #4facfe;
+  --accent-cyan: #00f2fe;
+  --accent-gold: #FFD700;
+  --accent-orange: #FFA500;
+  --shadow-color: rgba(0, 0, 0, 0.3);
+}
 
-/* Am pus comentariu pentru ca stiu cum */
-@import 'typography.css';
-@import 'welcome.css';
-@import 'connect.css';
-@import 'skills.css';
-@import 'footer.css';
+/* ============================
+   BODY & BACKGROUND
+   ============================ */
+body {
+  background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+  background-attachment: fixed;
+  color: var(--text-primary);
+  min-height: 100vh;
+}
 
-@import 'light-dark.css';
+/* Alternative animated background */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    radial-gradient(circle at 20% 50%, rgba(79, 172, 254, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(0, 242, 254, 0.1) 0%, transparent 50%);
+  z-index: -1;
+  pointer-events: none;
+}
 
+/* ============================
+   TEXT COLORS
+   ============================ */
+h1, h2, h3 {
+  color: var(--text-primary);
+}
+
+h1 span:first-child {
+  background: linear-gradient(135deg, var(--accent-blue), var(--accent-cyan));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+h2 span:last-child {
+  color: var(--accent-cyan);
+}
+
+.description {
+  color: var(--text-secondary);
+}
+
+/* ============================
+   COMPONENT STYLING
+   ============================ */
+.shadow-box {
+  background: rgba(26, 31, 58, 0.6);
+  border: 1px solid rgba(79, 172, 254, 0.2);
+}
+
+/* ============================
+   LINK COLORS
+   ============================ */
+.review-link-glow {
+  color: var(--accent-gold);
+  background: rgba(255, 215, 0, 0.1);
+  border: 2px solid var(--accent-gold);
+}
+
+.review-link-glow:hover {
+  color: var(--accent-orange);
+  background: rgba(255, 165, 0, 0.2);
+  border-color: var(--accent-orange);
+}
+
+/* ============================
+   FOOTER COLORS
+   ============================ */
+footer {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  box-shadow: 0 -4px 20px var(--shadow-color);
+}
+
+/* ============================
+   SCROLLBAR (optional)
+   ============================ */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, var(--accent-blue), var(--accent-cyan));
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-cyan);
+}
