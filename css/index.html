@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PsycosmicArt - Cosmic Art Shop</title>
+    <link rel="stylesheet" href="looks.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Floating Bubbles Background -->
+    <div class="bubbles">
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+    </div>
+
+    <!-- Language Switcher -->
+    <div class="language-switcher">
+        <button class="lang-btn active" onclick="switchLanguage('en')">EN</button>
+        <button class="lang-btn" onclick="switchLanguage('es')">ES</button>
+    </div>
+
+    <!-- Header Banner -->
+    <header class="hero-banner">
+        <div class="banner-content">
+            <div class="banner-left">
+                <div class="mushroom-icon">🍄</div>
+                <div class="logo-text">PSYCOSMIC</div>
+            </div>
+
+           <div class="banner-center">
+    <div class="candle-container">
+        <img src="https://images.unsplash.com/photo-1607024679057-962dd5c83e48?w=300&h=400&fit=crop" alt="Stay Awake Candle" class="candle-image">
+        <div class="stay-awake-label" data-en="STAY AWAKE" data-es="MANTENTE DESPIERTO">STAY AWAKE</div>
+    </div>
+</div>
+
+            <div class="banner-right">
+                <div class="tshirt-preview">
+                    <div class="eye-symbol">
+                        <svg viewBox="0 0 120 120" class="horus-eye">
+                            <circle cx="60" cy="60" r="25" fill="none" stroke="#ff00ff" stroke-width="2"/>
+                            <circle cx="60" cy="60" r="35" fill="none" stroke="#00ffff" stroke-width="1.5"/>
+                            <path d="M 40 60 Q 50 50, 60 60 Q 70 50, 80 60" stroke="#ff00ff" fill="none" stroke-width="2"/>
+                            <circle cx="60" cy="60" r="8" fill="#00ffff"/>
+                        </svg>
+                    </div>
+                    <div class="stay-awake-text" data-en="STAY AWAKE" data-es="MANTENTE DESPIERTO">STAY AWAKE</div>
+                </div>
+
+                <div class="hanger-icon">🪝</div>
+
+                <div class="rainbow-circle">
+                    <div class="circle-inner">
+                        <svg viewBox="0 0 100 100" class="eye-icon">
+                            <circle cx="50" cy="50" r="15" fill="none" stroke="#ff00ff" stroke-width="2"/>
+                            <circle cx="50" cy="50" r="6" fill="#00ffff"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Shop Info -->
+    <section class="shop-info">
+        <div class="container">
+            <div class="shop-header">
+                <h1>PsycosmicArt9</h1>
+                <div class="shop-rating">
+                    <span class="stars">★★★★★</span>
+                    <span class="rating-text">(4.9)</span>
+                </div>
+            </div>
+            <div class="shop-stats">
+                <span class="stat-item"><strong data-en="Sales:" data-es="Ventas:">Sales:</strong> 2,847</span>
+                <span class="stat-item"><strong data-en="Admirers:" data-es="Admiradores:">Admirers:</strong> 1,234</span>
+            </div>
+            <button class="follow-btn" data-en="Follow Shop" data-es="Seguir Tienda">Follow Shop</button>
+        </div>
+    </section>
+
+    <!-- Announcement -->
+    <section class="announcement">
+        <div class="container">
+            <h3 data-en="Shop Announcement" data-es="Anuncio de Tienda">Shop Announcement</h3>
+            <p data-en="Welcome! All products are digital downloads with instant delivery. Explore our cosmic collection." 
+               data-es="¡Bienvenido! Todos los productos son descargas digitales con entrega instantánea. Explora nuestra colección cósmica.">
+               Welcome! All products are digital downloads with instant delivery. Explore our cosmic collection.
+            </p>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="products">
+        <div class="container">
+            <h2 class="section-title" data-en="Featured Products" data-es="Productos Destacados">Featured Products</h2>
+            
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <a href="https://www.etsy.com/listing/example1" target="_blank" class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=400&h=400&fit=crop" alt="Cosmic Eye 528 Hz">
+                        <div class="product-overlay">
+                            <span class="view-text" data-en="Click to Purchase" data-es="Clic para Comprar">Click to Purchase</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 data-en="Cosmic Eye - 528 Hz Healing" data-es="Ojo Cósmico - 528 Hz Sanación">Cosmic Eye - 528 Hz Healing</h3>
+                        <p class="price">$28.82</p>
+                    </div>
+                </a>
+
+                <!-- Product 2 -->
+                <a href="https://www.etsy.com/listing/example2" target="_blank" class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=400&h=400&fit=crop" alt="Sacred Geometry">
+                        <div class="product-overlay">
+                            <span class="view-text" data-en="Click to Purchase" data-es="Clic para Comprar">Click to Purchase</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 data-en="Sacred Geometry Collection" data-es="Colección Geometría Sagrada">Sacred Geometry Collection</h3>
+                        <p class="price">$78.72</p>
+                    </div>
+                </a>
+
+                <!-- Product 3 -->
+                <a href="https://www.etsy.com/listing/example3" target="_blank" class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1620503374956-c942862f0372?w=400&h=400&fit=crop" alt="Mandala Art">
+                        <div class="product-overlay">
+                            <span class="view-text" data-en="Click to Purchase" data-es="Clic para Comprar">Click to Purchase</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 data-en="Psychedelic Mandala" data-es="Mandala Psicodélico">Psychedelic Mandala</h3>
+                        <p class="price">$35.50</p>
+                    </div>
+                </a>
+
+                <!-- Product 4 -->
+                <a href="https://www.etsy.com/listing/example4" target="_blank" class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?w=400&h=400&fit=crop" alt="Astral Journey">
+                        <div class="product-overlay">
+                            <span class="view-text" data-en="Click to Purchase" data-es="Clic para Comprar">Click to Purchase</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 data-en="Astral Journey Pack" data-es="Pack Viaje Astral">Astral Journey Pack</h3>
+                        <p class="price">$42.00</p>
+                    </div>
+                </a>
+
+                <!-- Product 5 -->
+                <a href="https://www.etsy.com/listing/example5" target="_blank" class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1534828956693-ac7c730a03dd?w=400&h=400&fit=crop" alt="Chakra Art">
+                        <div class="product-overlay">
+                            <span class="view-text" data-en="Click to Purchase" data-es="Clic para Comprar">Click to Purchase</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 data-en="Chakra Activation Art" data-es="Arte Activación Chakras">Chakra Activation Art</h3>
+                        <p class="price">$28.82</p>
+                    </div>
+                </a>
+
+                <!-- Product 6 -->
+                <a href="https://www.etsy.com/listing/example6" target="_blank" class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1557672172-298e090bd0f1?w=400&h=400&fit=crop" alt="Healing Frequencies">
+                        <div class="product-overlay">
+                            <span class="view-text" data-en="Click to Purchase" data-es="Clic para Comprar">Click to Purchase</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 data-en="Healing Frequency Bundle" data-es="Pack Frecuencias Sanadoras">Healing Frequency Bundle</h3>
+                        <p class="price">$78.72</p>
+                    </div>
+                </a>
+
+                <!-- Product 7 -->
+                <a href="https://www.etsy.com/listing/example7" target="_blank" class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1602874801006-94c4e4b55ff8?w=400&h=400&fit=crop" alt="Meditation Candle">
+                        <div class="product-overlay">
+                            <span class="view-text" data-en="Click to Purchase" data-es="Clic para Comprar">Click to Purchase</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 data-en="Stay Awake Candle Design" data-es="Diseño Vela Stay Awake">Stay Awake Candle Design</h3>
+                        <p class="price">$24.50</p>
+                    </div>
+                </a>
+
+                <!-- Product 8 -->
+                <a href="https://www.etsy.com/listing/example8" target="_blank" class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1509315811345-672d83ef2fbc?w=400&h=400&fit=crop" alt="Cosmic Poster">
+                        <div class="product-overlay">
+                            <span class="view-text" data-en="Click to Purchase" data-es="Clic para Comprar">Click to Purchase</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 data-en="Cosmic Vision Poster" data-es="Póster Visión Cósmica">Cosmic Vision Poster</h3>
+                        <p class="price">$32.00</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="container">
+            <h2 data-en="About PsycosmicArt" data-es="Acerca de PsycosmicArt">About PsycosmicArt</h2>
+            <p data-en="We create unique digital art infused with healing frequencies and sacred geometry. Each piece is designed to elevate consciousness and inspire transformation."
+               data-es="Creamos arte digital único impregnado con frecuencias sanadoras y geometría sagrada. Cada pieza está diseñada para elevar la conciencia e inspirar transformación.">
+               We create unique digital art infused with healing frequencies and sacred geometry. Each piece is designed to elevate consciousness and inspire transformation.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>PsycosmicArt</h3>
+                    <p data-en="Digital art for the awakened soul" data-es="Arte digital para el alma despierta">Digital art for the awakened soul</p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-en="Contact" data-es="Contacto">Contact</h4>
+                    <p>Email: info@psycosmicart.com</p>
+                    <p>Instagram: @psycosmicart9</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 PsycosmicArt. <span data-en="All rights reserved." data-es="Todos los derechos reservados.">All rights reserved.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Language Switcher
+        function switchLanguage(lang) {
+            // Update active button
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+
+            // Update all translatable elements
+            document.querySelectorAll('[data-en]').forEach(element => {
+                const text = element.getAttribute('data-' + lang);
+                if (text) {
+                    element.textContent = text;
+                }
+            });
+        }
+    </script>
+</body>
+</html>
